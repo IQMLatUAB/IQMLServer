@@ -1,9 +1,0 @@
-
-************************************************
-subprocess call: antsApplyTransforms -d 3 -i data/tmp/TCGA-DU-7294/masks_hdbet_native-space/TCGA-DU-7294_hdbet_mask_native_t1.nii.gz -r app/project_e/image_processing/brats_conversion/brats_niftis/t1_brats_space.nii -t data/tmp/TCGA-DU-7294/registrations/TCGA-DU-7294_native_t1_to_brats_0GenericAffine.mat -n BSpline[3] --float 1 -o data/tmp/TCGA-DU-7294/mask_hdbet_brats-space/TCGA-DU-7294_hdbet_mask_brats.nii.gz
-************************************************
-************************************************
-start time: 2021-02-07 22:52:54.335621
-end time: 22:52:57.397361
-time elapsed: 0.051029054323832194 minutes
-************************************************
