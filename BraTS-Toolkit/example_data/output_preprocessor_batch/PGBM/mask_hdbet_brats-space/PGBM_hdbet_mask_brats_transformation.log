@@ -1,0 +1,9 @@
+
+************************************************
+subprocess call: antsApplyTransforms -d 3 -i data/tmp/PGBM/masks_hdbet_native-space/PGBM_hdbet_mask_native_t1.nii.gz -r app/project_e/image_processing/brats_conversion/brats_niftis/t1_brats_space.nii -t data/tmp/PGBM/registrations/PGBM_native_t1_to_brats_0GenericAffine.mat -n BSpline[3] --float 1 -o data/tmp/PGBM/mask_hdbet_brats-space/PGBM_hdbet_mask_brats.nii.gz
+************************************************
+************************************************
+start time: 2021-05-20 21:44:07.133488
+end time: 21:44:09.777072
+time elapsed: 0.04405972162882487 minutes
+************************************************

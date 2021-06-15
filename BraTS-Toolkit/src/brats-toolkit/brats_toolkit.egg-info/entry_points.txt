@@ -1,0 +1,6 @@
+[console_scripts]
+brats-batch-preprocess = brats_toolkit.cli:batchpreprocess
+brats-fuse = brats_toolkit.cli:fusion
+brats-preprocess = brats_toolkit.cli:singlepreprocess
+brats-segment = brats_toolkit.cli:segmentation
+
