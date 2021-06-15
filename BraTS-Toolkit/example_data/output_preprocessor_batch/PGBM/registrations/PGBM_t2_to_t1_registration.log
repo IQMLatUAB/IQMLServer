@@ -1,0 +1,9 @@
+
+************************************************
+subprocess call: antsRegistration -d 3 -r [data/tmp/PGBM/raw_niftis/PGBM_native_t1.nii.gz, data/tmp/PGBM/raw_niftis/PGBM_native_t2.nii.gz, 0] -t rigid[0.1] -m Mattes[data/tmp/PGBM/raw_niftis/PGBM_native_t1.nii.gz,data/tmp/PGBM/raw_niftis/PGBM_native_t2.nii.gz, 1, 32, Regular, 0.5] -c [1000x500x250, 1e-6, 10] -s 3x2x1vox -f 8x4x2 -l 1 -z 1 -n BSpline[3] --float 1 -o [data/tmp/PGBM/registrations/PGBM_t2_to_t1_]
+************************************************
+************************************************
+start time: 2021-05-20 21:40:30.225480
+end time: 21:41:10.370087
+time elapsed: 0.6690769910812377 minutes
+************************************************

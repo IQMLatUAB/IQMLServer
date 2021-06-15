@@ -1,0 +1,318 @@
+/home/user/miniconda/envs/py36/lib/python3.6/site-packages/torch/cuda/__init__.py:95: UserWarning: 
+    Found GPU0 Tesla T4 which requires CUDA_VERSION >= 9000 for
+     optimal performance and fast startup time, but your PyTorch was compiled
+     with CUDA_VERSION 8000. Please install the correct PyTorch binary
+     using instructions from http://pytorch.org
+    
+  warnings.warn(incorrect_binary_warn % (d, name, 9000, CUDA_VERSION))
+=> loading checkpoint 'checkpoint_f0.pth.tar'
+=> loaded checkpoint 'checkpoint_f0.pth.tar' (epoch 100)
+(240, 240, 155)
+0, False
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+0, True
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+1, False
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+1, True
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+2, False
+(155, 240, 240)
+(0, 0, 0)
+(240, 240, 155)
+(155, 3, 240, 240)
+(3, 155, 240, 240)
+(240, 240, 155)
+2, True
+(155, 240, 240)
+(0, 0, 0)
+(240, 240, 155)
+(155, 3, 240, 240)
+(3, 155, 240, 240)
+=> loading checkpoint 'checkpoint_f1.pth.tar'
+=> loaded checkpoint 'checkpoint_f1.pth.tar' (epoch 100)
+(240, 240, 155)
+0, False
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+0, True
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+1, False
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+1, True
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+2, False
+(155, 240, 240)
+(0, 0, 0)
+(240, 240, 155)
+(155, 3, 240, 240)
+(3, 155, 240, 240)
+(240, 240, 155)
+2, True
+(155, 240, 240)
+(0, 0, 0)
+(240, 240, 155)
+(155, 3, 240, 240)
+(3, 155, 240, 240)
+=> loading checkpoint 'checkpoint_f2.pth.tar'
+=> loaded checkpoint 'checkpoint_f2.pth.tar' (epoch 100)
+(240, 240, 155)
+0, False
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+0, True
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+1, False
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+1, True
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+2, False
+(155, 240, 240)
+(0, 0, 0)
+(240, 240, 155)
+(155, 3, 240, 240)
+(3, 155, 240, 240)
+(240, 240, 155)
+2, True
+(155, 240, 240)
+(0, 0, 0)
+(240, 240, 155)
+(155, 3, 240, 240)
+(3, 155, 240, 240)
+=> loading checkpoint 'checkpoint_f3.pth.tar'
+=> loaded checkpoint 'checkpoint_f3.pth.tar' (epoch 100)
+(240, 240, 155)
+0, False
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+0, True
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+1, False
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+1, True
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+2, False
+(155, 240, 240)
+(0, 0, 0)
+(240, 240, 155)
+(155, 3, 240, 240)
+(3, 155, 240, 240)
+(240, 240, 155)
+2, True
+(155, 240, 240)
+(0, 0, 0)
+(240, 240, 155)
+(155, 3, 240, 240)
+(3, 155, 240, 240)
+=> loading checkpoint 'checkpoint_f4.pth.tar'
+=> loaded checkpoint 'checkpoint_f4.pth.tar' (epoch 100)
+(240, 240, 155)
+0, False
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+0, True
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+1, False
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+1, True
+(240, 240, 192)
+(0, 0, 37)
+(240, 240, 155)
+(240, 3, 240, 192)
+(3, 240, 240, 192)
+(240, 240, 155)
+2, False
+(155, 240, 240)
+(0, 0, 0)
+(240, 240, 155)
+(155, 3, 240, 240)
+(3, 155, 240, 240)
+(240, 240, 155)
+2, True
+(155, 240, 240)
+(0, 0, 0)
+(240, 240, 155)
+(155, 3, 240, 240)
+(3, 155, 240, 240)
+ median tumor uncertainty = 0.34402550845946234, 1411755 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 4 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 5 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 4 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 5 filtered
+ median tumor uncertainty = 0.34402550845946234, 5 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 5 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 3 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 4 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 4 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 2 filtered
+ median tumor uncertainty = 0.34402550845946234, 5 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 1 filtered
+ median tumor uncertainty = 0.34402550845946234, 9 filtered
+case has 0 tumor core compartments
+largest tumor core compartment has 0 voxels
+whole tumor label has 0 compartments
+0 deleted for being too small
+tumor has 0 compartments
+no core detected, assuming whole edema is core
+tumor has 0 compartments
