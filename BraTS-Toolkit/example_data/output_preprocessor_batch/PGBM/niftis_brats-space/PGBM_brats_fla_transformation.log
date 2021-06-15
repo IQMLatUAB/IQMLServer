@@ -1,9 +1,0 @@
-
-************************************************
-subprocess call: antsApplyTransforms -d 3 -i data/tmp/PGBM/niftis_t1-space/PGBM_t1s_fla.nii.gz -r app/project_e/image_processing/brats_conversion/brats_niftis/t1_brats_space.nii -t data/tmp/PGBM/registrations/PGBM_native_t1_to_brats_0GenericAffine.mat -n BSpline[3] --float 1 -o data/tmp/PGBM/niftis_brats-space/PGBM_brats_fla.nii.gz
-************************************************
-************************************************
-start time: 2021-05-20 21:42:21.083672
-end time: 21:42:24.419134
-time elapsed: 0.05559080044428508 minutes
-************************************************

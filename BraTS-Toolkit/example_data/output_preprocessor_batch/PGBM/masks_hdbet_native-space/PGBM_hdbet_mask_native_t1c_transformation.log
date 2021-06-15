@@ -1,9 +1,0 @@
-
-************************************************
-subprocess call: antsApplyTransforms -d 3 -i data/tmp/PGBM/masks_hdbet_native-space/PGBM_hdbet_mask_native_t1.nii.gz -r data/tmp/PGBM/raw_niftis/PGBM_native_t1c.nii.gz -t [data/tmp/PGBM/registrations/PGBM_t1c_to_t1_0GenericAffine.mat, 1] -n NearestNeighbor --float 1 -o data/tmp/PGBM/masks_hdbet_native-space/PGBM_hdbet_mask_native_t1c.nii.gz
-************************************************
-************************************************
-start time: 2021-05-20 21:44:00.678454
-end time: 21:44:01.333045
-time elapsed: 0.01091005007425944 minutes
-************************************************
