@@ -3,6 +3,8 @@ addpath DeepBT_Function
 addpath DeepNI_Function
 addpath DICOM2Nifti
 
+setenv('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libstdc++.so.6');
+setenv('PATH', [getenv('PATH') '/opt/ANTs/bin/']);
 [IQML_path, ~, ~] = fileparts(pwd);
 BTK_path = fullfile(IQML_path, 'BraTS-Toolkit');
 input_t1_path = fullfile(pwd, 'Image_Analysis_Result/Input/Subject1/input_t1.nii.gz');
