@@ -236,8 +236,7 @@ function start_server(timeout_seconds)
                     if job.config.softnum < 1000 % DeepBT
 		                fileID = fopen(append(pwd,'/wait_for_process/', job.hash,'T1', '.mat'),'r');
 		                rawdata = fread(fileID, '*int8');
-		                [s,~] = size(rawdata);
-		                job.config.input = cell(s,1);
+		                job.config.input = cell(4,1);
 		                job.config.input{1} = rawdata;
 		                fclose(fileID);
 		                fileID = fopen(append(pwd,'/wait_for_process/', job.hash,'T1post', '.mat'),'r');
@@ -255,8 +254,7 @@ function start_server(timeout_seconds)
 	                elseif job.config.softnum >= 1000
 			            fileID = fopen(append(pwd, '/wait_for_process/', job.hash, '.mat'),'r');
 		                rawdata = fread(fileID, '*int8');
-		                [s,~] = size(rawdata);
-		                job.config.input = cell(s,1);
+		                job.config.input = cell(1,1);
 		                job.config.input{1} = rawdata;
 		                fclose(fileID);
                     end
