@@ -22,7 +22,7 @@ This repository is the server end Matlab code of [DeepBTSeg](https://github.com/
 2. Docker (run as root user)
 3. CMake (Required if ANTs hasn't been installed)
 4. [ANTs](https://github.com/ANTsX/ANTs/wiki/Compiling-ANTs-on-Linux-and-Mac-OS)
-    1. Follow the steps to **Post installation: set environment variables PATH and ANTSPATH**
+    1. Follow the steps to **"Post installation: set environment variables PATH and ANTSPATH"**
 
 ## Download
 There are two ways that can download IQMLServer on the local PC :
@@ -51,9 +51,12 @@ $ pip install -e git+https://github.com/neuronflow/BraTS-Toolkit-Source.git@mast
 In the `DeepNI` server end task, we modified some existed deep learning models for classification and image correction task. As for classification, we utilized [FastSurfer](https://github.com/Deep-MI/FastSurfer)[[4]](#4) and [DARTS](https://github.com/NYUMedML/DARTS)[[5]](#5), then [InhomoNet](https://colab.research.google.com/drive/1dCt-UfqH72pGdmaOKEbWUEY6D7CtH-M3?usp=sharing#scrollTo=kEAI601tBofl)[[6]](#6) was used for image correction.<br><br>
 To perform the image analysis models, please build these images by running these commands:
 ```bash
-$ cd /path/to/InhomoNet; docker build -t inhomonet:1.0 -f ./Docker/Dockerfile .
-$ cd /path/to/FastSurfer; docker build -t fastsurfercnn:gpu -f ./Docker/Dockerfile_FastSurferCNN .
-$ cd /path/to/DARTS; docker build -t darts:1.0 -f ./Docker/Dockerfile .
+$ cd /path/to/InhomoNet
+$ docker build -t inhomonet:1.0 -f ./Docker/Dockerfile .
+$ cd /path/to/FastSurfer
+$ docker build -t fastsurfercnn:gpu -f ./Docker/Dockerfile_FastSurferCNN .
+$ cd /path/to/DARTS
+$ docker build -t darts:1.0 -f ./Docker/Dockerfile .
 ```
 
 ## User_Instruction_Server
