@@ -44,12 +44,21 @@ Before starting the IQMLServer, there are some sources need to be pulled to this
 In the `DeepBTSeg` server end task, beside from using IQML_model composed of matlab deep learning toolbox, we also utilized the BraTS-Toolkit [[1]](#1). Which implemented several deep learning models that can be used for brain tumor segmentation. Including `isen-20`, `mic-dkfz`[[2]](#2), and `xyz_2019`[[3]](#3).<br><br>
 To install the sources of BTK, please install the latest BTK-Source provided by [BraTS-Toolkit](https://github.com/neuronflow/BraTS-Toolkit). <br>
 ```bash
-$ cd /path/to/BraTS-Toolkit;
+$ cd /path/to/BraTS-Toolkit
 $ pip install -e git+https://github.com/neuronflow/BraTS-Toolkit-Source.git@master#egg=brats_toolkit
 ```
 2. **Image analysis docker images**:<br>
-In the `DeepNI` server end task, we modified some existed deep learning models for classification and image correction task. As for classification, we utilized [FastSurfer](https://github.com/Deep-MI/FastSurfer)[[4]](#4) and [DARTS](https://github.com/NYUMedML/DARTS)[[5]](#5), then [InhomoNet](https://colab.research.google.com/drive/1dCt-UfqH72pGdmaOKEbWUEY6D7CtH-M3?usp=sharing#scrollTo=kEAI601tBofl)[[6]](#6) was used for image correction.
+In the `DeepNI` server end task, we modified some existed deep learning models for classification and image correction task. As for classification, we utilized [FastSurfer](https://github.com/Deep-MI/FastSurfer)[[4]](#4) and [DARTS](https://github.com/NYUMedML/DARTS)[[5]](#5), then [InhomoNet](https://colab.research.google.com/drive/1dCt-UfqH72pGdmaOKEbWUEY6D7CtH-M3?usp=sharing#scrollTo=kEAI601tBofl)[[6]](#6) was used for image correction.<br><br>
+To perform the image analysis models, please build these images by running these commands:
+```bash
+$ cd /path/to/InhomoNet; docker build -t inhomonet:1.0 -f ./Docker/Dockerfile .
+$ cd /path/to/FastSurfer; docker build -t fastsurfercnn:gpu -f ./Docker/Dockerfile_FastSurferCNN .
+$ cd /path/to/DARTS; docker build -t darts:1.0 -f ./Docker/Dockerfile .
+```
 
+## User_Instruction_Server
+
+## User_Instruction_Worker
 
 ## References
 
