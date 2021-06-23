@@ -7,7 +7,7 @@ This repository is the server end Matlab code of [DeepBTSeg](https://github.com/
 ## Contents
 - [Requirements](#Requirements)
 - [Download](#Download)
-- [Predecessor_Activity](#Predecessor_Activity)
+- [Before_Using](#Before_Using)
 - [User_Instruction_Server](#User_Instruction_Server)
 - [User_Instruction_Worker](#User_Instruction_Worker)
 - [FAQs](#FAQs)
@@ -37,7 +37,7 @@ $ git clone https://github.com/IQMLatUAB/IQMLServer.git
 ```
 After download is finished, open MATLAB, then change MATLAB current folder to the path you download this repo.
 
-## Predecessor_Activity
+## Before_Using
 Before starting the IQMLServer, there are some sources need to be pulled to this repository.
 
 1. **BraTS-Toolkit-Source**:<br>
