@@ -60,8 +60,19 @@ $ docker build -t darts:1.0 -f ./Docker/Dockerfile .
 ```
 
 ## User_Instruction_Server
+The following part is the `server` instruction inside this `IQMLServer` repository. The `server` handles the distribution of the jobs, and it is in charge of queueing the jobs and receiving the working command from `client` or `worker`.<br>
+1. Open MATLAB, then change MATLAB current folder to `IQMLServer`.
+2. Inside MATLAB command window, type `jobmgr.server.start_server`, then you should be able to see the server start successfully like this:<br>
+![](images/.png)
+3. Then, The server port is open to receive jobs or commands from `worker` and `client`.
 
 ## User_Instruction_Worker
+The following part is the `worker` instruction inside this `IQMLServer` repository. After the `server` is run, `worker` should be able to be run. The `worker` handles the jobs' processing tasks, and it is in charge of deciphering the data, specified models and arguments. After the jobs are finished, `worker` sends back the jobs to `server`.<br><br>
+**NOTICE**: the `worker` should run under the OS which has **GPU support**.<br><br> 
+1. Open MATLAB, then change MATLAB current folder to `IQMLServer`.
+2. Inside MATLAB command window, type `jobmgr.server.control('accept_workers')`, after receiving the 'OK' message from `server`, type `jobmgr.server.start_worker(jobmgr.server.tcp_ip)`. Then you should be able to see the worker start successfully like this:<br>
+![](images/.png)
+3. Then, The worker is open to receive jobs from `server`.
 
 ## References
 
