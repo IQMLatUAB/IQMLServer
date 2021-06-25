@@ -1,4 +1,5 @@
 # IQMLServer
+![](images/flowchart_V1.png)
 IQMLServer, a shared software platform to serve as a unified and integrated environment for processing and analyzing neuroimaging data with deep learning methods. Including DeepNI platform and DeepBTSeg platform.
 
 This repository is the server end Matlab code of [DeepBTSeg](https://github.com/IQMLatUAB/DeepBTSeg) and [DeepNI](https://github.com/IQMLatUAB/DeepNI). IQMLServer is **developed under Matlab 2020b** and is **executable under Matlab 2019b and Matlab 2020a**. Running the `IQMLServer` Matlab code under **Matlab 2020b is recommended**.
@@ -28,7 +29,7 @@ This repository is the server end Matlab code of [DeepBTSeg](https://github.com/
 There are two ways that can download IQMLServer on the local PC :
 1. Dowload IQMLServer repository .zip file, then unzip it to the local PC.
 
-![](images/.png)
+![](images/zip.png)
 
 2. Open the terminal, then type
 ```bash
@@ -63,7 +64,7 @@ $ docker build -t darts:1.0 -f ./Docker/Dockerfile .
 The following part is the `server` instruction inside this `IQMLServer` repository. The `server` handles the distribution of the jobs, and it is in charge of queueing the jobs and receiving the working command from `client` or `worker`.<br>
 1. Open MATLAB, then change MATLAB current folder to `IQMLServer`.
 2. Inside MATLAB command window, type `jobmgr.server.start_server`, then you should be able to see the server start successfully like this:<br>
-![](images/.png)
+![](images/server.png)
 3. Then, The server port is open to receive jobs or commands from `worker` and `client`.
 
 ## User_Instruction_Worker
@@ -71,7 +72,7 @@ The following part is the `worker` instruction inside this `IQMLServer` reposito
 **NOTICE**: the `worker` should run under the OS which has **GPU support**.<br><br> 
 1. Open MATLAB, then change MATLAB current folder to `IQMLServer`.
 2. Inside MATLAB command window, type `jobmgr.server.control('accept_workers')`, after receiving the 'OK' message from `server`, type `jobmgr.server.start_worker(jobmgr.server.tcp_ip)`. Then you should be able to see the worker start successfully like this:<br>
-![](images/.png)
+![](images/worker.png)
 3. Then, The worker is open to receive jobs from `server`.
 
 ### Other notice points:
