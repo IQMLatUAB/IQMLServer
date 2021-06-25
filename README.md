@@ -74,6 +74,62 @@ The following part is the `worker` instruction inside this `IQMLServer` reposito
 ![](images/.png)
 3. Then, The worker is open to receive jobs from `server`.
 
+### Other notice points:
+1. It needs time to pull the needed images from the docker hub when performing the BraTs-Toolkit for the first time.
+
+## FAQs
+1. `engineio.exceptions.ConnectionError: Connection refused by the server`<br>
+When performing BraTS-Toolkit BT segmentation, if this error message comes up, it might come from the unstable internet connection, the recommended way to solve this is to change to a more stable internet environment. Or, create a python script, and run the following commands.<br>
+```python
+import socket
+import socketio
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.connect(('8.8.8.8', 80))
+ip = s.getsockname()[0]
+s.close()
+print(ip) # It should print out the local ip address
+
+sio = socketio.Client()
+sio.connect('http://' + ip + ':5000')
+print('sid:', sio.sid)
+# It should return the uniqure session id like this:
+# sid: 42267918769e481f9d5912f7bced1dfd
+```
+If the above execution succeeds, then you can try again with the BraTS preprocessing.
+Here, moidify `preprocesssor.py` file under `./src/brats-toolkit/brats_toolkit.`<br>
+**ORIGINAL CODE:**
+```python
+        # setup connection
+        # TODO do this in a more elegant way and somehow check whether docker is up and running before connect
+        self.sio.sleep(5)  # wait 5 secs for docker to start
+        self.connect_client()
+        self.sio.wait()
+
+def connect_client(self):
+        self.sio.connect('http://localhost:5000')
+        print('sid:', self.sio.sid)
+```
+**REVISED CODE:**
+```python
+        # setup connection
+        # TODO do this in a more elegant way and somehow check whether docker is up and running before connect
+        self.sio.sleep(5)  # wait 5 secs for docker to start
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(('8.8.8.8', 80))
+        ip = s.getsockname()[0]
+        s.close()
+        print(ip)
+        self.connect_client(ip)
+        self.sio.wait()
+
+    def connect_client(self, ip):
+        self.sio.connect('http://' + ip + ':5000')
+        print('sid:', self.sio.sid)
+```
+2. `OutOfMemory Java heap memory problem:`<br>
+if the input file size is too big, then the user needs to change the size of the Java heap size to its maximum possible value by simply going to **>Preferences>Genera>Java Help Memory**. Then change the size to the value above the input files size. Like this:
+![](images/.png)
+
 ## References
 
 <a id="1">[1]</a> 
@@ -94,3 +150,12 @@ Kaku, A., Hegde, C. V., Huang, J., Chung, S., Wang, X., Young, M., ... & Razavia
 <a id="6">[6]</a> 
 Venkatesh, V., Sharma, N., Singh, M., 2020. Intensity inhomogeneity correction of MRI images using InhomoNet. Computerized Medical Imaging and Graphics 84, 101748.. doi:10.1016/j.compmedimag.2020.101748
 
+# Future Work
+Right now, we are still working on to implement more DL models on the server so that the user can have more options to performe medical image analysis.
+
+# Maintainer
+[@IQMLatUAB](https://github.com/IQMLatUAB)
+
+[@Zi-Min Weng](https://github.com/elite7358)
+
+[@Sheng-Chieh Chiu](https://github.com/chocolatetoast-chiu)
