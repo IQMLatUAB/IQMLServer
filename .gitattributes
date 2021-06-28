@@ -1,2 +1,1 @@
 *.pth filter=lfs diff=lfs merge=lfs -text
-InhomoNet/inhomonet/model_final.ckpt.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
