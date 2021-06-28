@@ -27,9 +27,9 @@ This repository is the server end Matlab code of [DeepBTSeg](https://github.com/
 
 ## Download
 There are two ways that can download IQMLServer on the local PC :
-1. Dowload IQMLServer repository .zip file, then unzip it to the local PC.
+1. Dowload IQMLServer repository .zip file, then unzip it to the local PC.<br>
 
-![](images/.png)
+![](images/zip.png)
 
 2. Open the terminal, then type
 ```bash
