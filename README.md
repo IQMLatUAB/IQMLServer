@@ -36,6 +36,9 @@ There are two ways that can download IQMLServer on the local PC :
 $ cd YOUR_PREFERRED_INSTALLATION_PATH
 $ git clone https://github.com/IQMLatUAB/IQMLServer.git
 ```
+
+3. Install pretrained weights of InhomoNet from [here](https://drive.google.com/file/d/1Z0rSjBSmUAY5tRBi70DcU5YmH1OLevUm/view?usp=sharing), and add it under `./InhomoNet/inhomonet` directory.
+
 After download is finished, open MATLAB, then change MATLAB current folder to the path you download this repo.
 
 ## Before_Using
