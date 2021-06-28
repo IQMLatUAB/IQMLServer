@@ -2,7 +2,7 @@
 ![](images/flowchart_V1.png)
 IQMLServer, a shared software platform to serve as a unified and integrated environment for processing and analyzing neuroimaging data with deep learning methods. Including DeepNI platform and DeepBTSeg platform.
 
-This repository is the server end Matlab code of [DeepBTSeg](https://github.com/IQMLatUAB/DeepBTSeg) and [DeepNI](https://github.com/IQMLatUAB/DeepNI). IQMLServer is **developed under Matlab 2020b** and is **executable under Matlab 2019b and Matlab 2020a**. Running the `IQMLServer` Matlab code under **Matlab 2020b is recommended**.
+This repository is the server end Matlab code of [DeepBTSeg](https://github.com/IQMLatUAB/DeepBTSeg) and [DeepNI](https://github.com/IQMLatUAB/DeepNI). IQMLServer is **developed under Matlab 2020b** and is **executable under Matlab 2019b and Matlab 2020a**. Running the `IQMLServer` Matlab code under **Matlab 2020b is recommended**
 
 # Usage
 ## Contents
