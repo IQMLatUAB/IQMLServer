@@ -39,6 +39,10 @@ $ git clone https://github.com/IQMLatUAB/IQMLServer.git
 
 3. Download pretrained weights of InhomoNet from [here](https://drive.google.com/file/d/1Z0rSjBSmUAY5tRBi70DcU5YmH1OLevUm/view?usp=sharing), and add it under `./InhomoNet/inhomonet` directory.
 
+4. Create `wait_for_process` and `Image_Analysis_Result` folders under `./IQMLServer/IQMLServer/`.
+
+5. Create `Input` and `Output` folders under `Image_Analysis_Result`
+
 After download is finished, open MATLAB, then change MATLAB current folder to the path you download this repo.
 
 ## Before_Using
