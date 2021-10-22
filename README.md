@@ -54,7 +54,7 @@ To install the sources of BTK, please install the latest BTK-Source provided by 
 ```bash
 $ cd /path/to/BraTS-Toolkit
 $ pip install -e git+https://github.com/neuronflow/BraTS-Toolkit-Source.git@master#egg=brats_toolkit
-
+```
 **NOTICE**: The `pip install` command should be run under the established conda environment.
 
 2. **Image analysis docker images**:<br>
