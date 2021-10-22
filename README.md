@@ -54,7 +54,9 @@ To install the sources of BTK, please install the latest BTK-Source provided by 
 ```bash
 $ cd /path/to/BraTS-Toolkit
 $ pip install -e git+https://github.com/neuronflow/BraTS-Toolkit-Source.git@master#egg=brats_toolkit
-```
+
+**NOTICE**: The `pip install` command should be run under the established conda environment.
+
 2. **Image analysis docker images**:<br>
 In the `DeepNI` server end task, we modified some existed deep learning models for classification and image correction task. As for classification, we utilized [FastSurfer](https://github.com/Deep-MI/FastSurfer)[[4]](#4) and [DARTS](https://github.com/NYUMedML/DARTS)[[5]](#5), then [InhomoNet](https://colab.research.google.com/drive/1dCt-UfqH72pGdmaOKEbWUEY6D7CtH-M3?usp=sharing#scrollTo=kEAI601tBofl)[[6]](#6) was used for image correction.<br><br>
 To perform the image analysis models, please build these images by running these commands:
